@@ -1,0 +1,19 @@
+{
+  "name": "devfbtach14abril",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salvadorjmz24/devFBtach14Abril.git"
+  },
+  "author": "salvador.jmz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salvadorjmz24/devFBtach14Abril/issues"
+  },
+  "homepage": "https://github.com/Salvadorjmz24/devFBtach14Abril#readme"
+}
