@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Salvadorjmz24/devFBtach14Abril/issues"
   },
-  "homepage": "https://github.com/Salvadorjmz24/devFBtach14Abril#readme"
+  "homepage": "https://github.com/Salvadorjmz24/devFBtach14Abril#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
 }
