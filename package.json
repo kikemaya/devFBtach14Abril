@@ -1,0 +1,22 @@
+{
+  "name": "devfbtach14abril",
+  "version": "1.0.0",
+  "description": "repositorio del batch 14",
+  "main": "index2.js",
+  "scripts": {
+    "suma": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikemaya/devFBtach14Abril.git"
+  },
+  "author": "Enrique Maya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikemaya/devFBtach14Abril/issues"
+  },
+  "homepage": "https://github.com/kikemaya/devFBtach14Abril#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

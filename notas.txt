@@ -1,0 +1,6 @@
+node es un entorno de ejecucion para javascript, 
+del lado del servidor.
+
+Un cliente, es un software que hace peticiones a uno
+o varios servers y recibe respuesta de estos, para hacer 
+algo con la data.
