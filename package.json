@@ -1,0 +1,25 @@
+{
+  "name": "devfbtach14abril",
+  "version": "1.0.0",
+  "description": "repositorio del batch 14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "suma": "node ./source/index.js",
+    "multiplicacion": "node ./source/index.js",
+    "resta": "node ./source/index1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pacocoder86/devFBtach14Abril.git"
+  },
+  "author": "Paco Menchaca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pacocoder86/devFBtach14Abril/issues"
+  },
+  "homepage": "https://github.com/Pacocoder86/devFBtach14Abril#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
