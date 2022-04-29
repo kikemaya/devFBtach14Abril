@@ -4,7 +4,9 @@
   "description": "repositorio del batch 14",
   "main": "index2.js",
   "scripts": {
-    "suma": "node ./src/index.js"
+    "suma": "node ./src/index.js",
+    "callback" : "node ./src/callback/c2.js",
+    "callback-ch" : "node ./src/callback/c-challenge.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/kikemaya/devFBtach14Abril#readme",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
