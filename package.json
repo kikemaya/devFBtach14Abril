@@ -1,0 +1,25 @@
+{
+  "name": "04_javascripts_avanzado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "suma": "node ./src/index.js",
+    "saludo": "node ./src/index2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasSP12/04_JavaScripts_Avanzado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasSP12/04_JavaScripts_Avanzado/issues"
+  },
+  "homepage": "https://github.com/NicolasSP12/04_JavaScripts_Avanzado#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
