@@ -6,7 +6,8 @@
   "scripts": {
     "suma": "node ./src/index.js",
     "callback" : "node ./src/callback/c2.js",
-    "callback-ch" : "node ./src/callback/c-challenge.js"
+    "callback-ch" : "node ./src/callback/c-challenge.js",
+    "xmlhttp" : "node ./src/ajax/xmlhttp-1.js"
   },
   "repository": {
     "type": "git",
