@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "suma": "node ./src/index.js",
-    "callback" : "node ./src/callback/c2.js",
-    "callback-ch" : "node ./src/callback/c-challenge.js",
-    "xmlhttp" : "node ./src/ajax/xmlhttp-1.js"
+    "callback": "node ./src/callback/c2.js",
+    "callback-ch": "node ./src/callback/c-challenge.js",
+    "ajax": "node ./src/ajax/xmlhttp-2.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Salvadorjmz24/devFBtach14Abril#readme",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0"
   }
 }
