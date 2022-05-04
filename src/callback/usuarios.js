@@ -1,5 +1,6 @@
 "use strict";
 
+//comenterario para subirlo a la rama feature
 module.exports = {
 usuarioSinc(id) {
     console.log("JEJEJ");
