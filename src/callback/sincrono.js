@@ -1,6 +1,6 @@
 "use strict";
 
-//comenterario para subirlo a la rama feature
+//este archivo necesita al archivo usuarios
 const { usuarioSinc } = require("./Usuarios");
 
 console.log("Inicio del programa");
