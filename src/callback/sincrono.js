@@ -1,5 +1,6 @@
 'use strict'
 
+//Este archivo necesita al archivo llamado usuarios
 const { usuarioSinc } = require('./usuarios');
 
 console.log('Inicio del programa');

@@ -1,8 +1,7 @@
 'use strict'
 
+//Este archivo necesita al archivo llamado usuarios
 const { usuarioAsinc } = require('./usuarios');
-
-// console.log('JAJA ', informacionPrueba);
 
 console.log('Inicio del programa');
 console.time('inicio');
