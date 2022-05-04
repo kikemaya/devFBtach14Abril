@@ -19,7 +19,6 @@ module.exports = {
       "nombre": `Usuario ${id}`
     }
 
-    console.log('JAJAAJ ', 5+id);
     setTimeout(() => {
       callback(usuario)
     }, 3000);
