@@ -1,0 +1,19 @@
+- Node es un entorno de ejecucion para javascript, 
+del lado del servidor.
+
+- Un cliente, es un software que hace peticiones a uno
+o varios servers y recibe respuesta de estos, para hacer 
+algo con la data.
+
+- javascript es un lenguaje single thread
+
+- Los estados de una request de acuerdo a la documentacion
+de XMLHttRequest.readyState:
+
+0: request not initialized
+1: server connection established
+2: request received
+3: processing request
+4: request finished and response is ready
+
+fuente: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
