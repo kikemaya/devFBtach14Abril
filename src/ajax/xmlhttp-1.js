@@ -1,4 +1,7 @@
 //importo el paquete de npm, para poder usarlo en este archivo
+
+// XMLHttpRequest = clase creada por microsoft, para hacer peticiones HTTP usando verbos HTTP como GET, POST, PUT, PATCH, DELETE, etc
+// es modules = webpack, nos permie trabajar de forma
 const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
 
 //url a la que hay que hacer la peticion
