@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "suma": "node ./src/index.js",
-    "saludo": "node ./src/index2.js"
+    "saludo": "node ./src/index2.js",
+    "json-server": "json-server ./data1.json",
+    "up-json": "json-server ./src/crud-1/data.json"
   },
   "repository": {
     "type": "git",
