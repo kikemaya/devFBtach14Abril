@@ -8,7 +8,8 @@
     "nodemon": "nodemon ./src/promesas/promesaAxios.js",
     "callback": "node ./src/callback/c2.js",
     "callback-ch": "node ./src/callback/c-challenge.js",
-    "express": "nodemon ./src/express/index.js"
+    "express": "nodemon ./src/express/index.js",
+    "up-json" : "json-server ./src/crud-1/data.json"
   },
   "repository": {
     "type": "git",

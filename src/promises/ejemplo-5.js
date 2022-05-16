@@ -2,6 +2,7 @@
 
 //podemos hacer peticiones HTTP
 //fetch nos devuelve una promesa
+
 const showData = async () => {
     try {
         const resultado = await getData()
