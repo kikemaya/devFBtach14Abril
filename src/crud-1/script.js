@@ -17,6 +17,7 @@ const content_w = d.getElementById('content-wrapper')
 
 const URL = 'http://localhost:3000/data/'
 
+//crear los li en el DOM
 const printTasks = (task, id) => {
 
     let li = d.createElement('li')
@@ -41,6 +42,7 @@ const printTasks = (task, id) => {
 
 }
 
+//hacer una peticion GET a la URL base y con ayuda de printTasks, imprimir en el DOM la info dinamica
 const getData = () => {
     fetch(URL)
         .then(response => response.json())
@@ -53,6 +55,7 @@ const getData = () => {
 }
 getData()
 
+//Hace una peticion POST, se ejecuta cuando creo un elemento nuevo
 const sendData = (data) => {
     fetch(URL, {
         method: 'POST',
@@ -67,6 +70,7 @@ const sendData = (data) => {
     .then(data => console.log(data))
 }
 
+//Hace una peticion PUT, se ejecuta porque està guardado en el botòn de editar que se crea con la funcion printTasks
 const updateData = (task, id) => {
     fetch(URL + id, {
         method: 'PUT',
@@ -79,6 +83,7 @@ const updateData = (task, id) => {
     .then(data => console.log(data))
 }
 
+//Hace una peticion DELETE, se ejecuta porque està guardado en el botòn de eliminar que se crea con la funcion printTasks
 const deleteData = (id) => {
     fetch(URL + id, {
         method: 'DELETE',
