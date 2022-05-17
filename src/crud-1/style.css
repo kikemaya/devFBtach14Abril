@@ -1,0 +1,31 @@
+#btn-add{
+    border-radius: 15%;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    color: white;
+}
+#btn-add:hover{
+    background-color: black;
+}
+
+.img-navbar{
+    width: 4%;
+}
+
+.space{
+    margin-top: 0.5%;
+}
+
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.btn-list{
+    border-radius: 15%;
+    margin-left: 1%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}

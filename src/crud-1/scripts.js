@@ -4,27 +4,30 @@ const d = document
 const input_todo = d.getElementById("input-todo")
 const btn_add = d.getElementById("btn-add")
 const content_w = d.getElementById("content-wrapper")
-const URL = "http://localhost:3000/data"
+const URL = "http://localhost:3000/data/"
 
-const printTasks = (task) => {
+const printTasks = (task, id) => {
 
     //li
     let li = d.createElement("li")
-    li.dataset.id = 9
+    li.classList.add("text", "space")
+    li.dataset.id = id
     li.textContent = task   
     
     //buttons
     const btn_1 = d.createElement("button")
     const btn_2 = d.createElement("button")
+    btn_1.classList.add("btn-list")
+    btn_2.classList.add("btn-list")
     btn_1.textContent = "Editar"
     btn_2.textContent = "Eliminar"
 
     btn_1.addEventListener("click", () => {
-        console.log("Editando . . .")
+        updateData(input_todo.value, id)
     })
 
     btn_2.addEventListener("click", () => {
-        console.log("Eliminando . . .")
+        deleteData(id)
     })
 
     //apenndchild
@@ -36,28 +39,62 @@ const getData = () => {
     fetch(URL)
         .then(response => response.json())
         .then(data => data.forEach(element => {
-            printTasks(element.task)
+            printTasks(element.task, element.id)
         }))
         .catch(error => console.error(error))
 }
 
-const sendData = () => {
+const sendData = (data) => {
     fetch( URL ,{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            "task": "otra tarea mas del browser..."
+            "task": `${data}`
         })
     })
         .then(response => response.json)
         .then(data => console.log(data))
 }
 
+const updateData = (task, id) => {
+    fetch(URL + id, {
+        method: "PUT",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({"task": `${task}`})
+    })
+}
+
+const deleteData = (id) => {
+    fetch(URL + id, {
+        method: "DELETE",
+        headers: {"Content-Type": "application/json"},
+    })
+}
+
 btn_add.addEventListener("click", (e) => {
-    sendData()
+    validacion(input_todo.value)
 })
 
+const validacion = () =>{
+    if(input_todo.value){
+        sendData(input_todo.value)
+    } else{
+        alert("Ingrese algo valido")
+    }
+}
 
 getData()
+
+//https://jsonplaceholder.typicode.com/
+
+// https://pokeapi.co/
+
+// https://swapi.dev/
+
+// https://www.fbi.gov/wanted/api
+
+// https://api.nasa.gov/
+
+// https://rickandmortyapi.com/

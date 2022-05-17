@@ -1,13 +1,15 @@
 {
   "data": [
     {
+      "task": "Tarea 1",
       "id": 1
     },
     {
+      "task": "Tarea 2 (Editada)",
       "id": 2
     },
     {
-      "task": "otra tarea mas del browser...",
+      "task": "Tarea 3",
       "id": 3
     }
   ]
