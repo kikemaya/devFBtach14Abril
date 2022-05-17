@@ -1,5 +1,12 @@
 'use strict'
 
+/*
+PARA ESTE CASO ESPECIFICO
+    CREATE -> POST
+    READ -> GET
+    UPDATE -> PUT
+    DELETE -> DELETE
+*/
 const d = document
 
 const input_todo = d.getElementById('input-todo')
@@ -8,12 +15,12 @@ const btn_add = d.getElementById('btn-add')
 
 const content_w = d.getElementById('content-wrapper')
 
-const URL = 'http://localhost:3000/data'
+const URL = 'http://localhost:3000/data/'
 
-const printTasks = (task) => {
+const printTasks = (task, id) => {
 
     let li = d.createElement('li')
-    li.dataset.id = 9
+    li.dataset.id = id
     li.textContent = task
 
     const btn_1 = d.createElement('button')
@@ -22,11 +29,11 @@ const printTasks = (task) => {
     btn_2.textContent = 'Eliminar'
 
     btn_1.addEventListener('click', () => {
-        console.log('Editando...');
+        updateData(input_todo.value, id)
     })
 
     btn_2.addEventListener('click', () => {
-        console.log('Eliminando...');
+        deleteData(id)
     })
 
     li.append(btn_1, btn_2)
@@ -39,27 +46,54 @@ const getData = () => {
         .then(response => response.json())
         .then(data => {
             data.forEach(element => {
-                printTasks(element.task)
+                printTasks(element.task, element.id)
             });
         })
         .catch(error => console.error(error))
 }
 getData()
 
-const sendData = () => {
+const sendData = (data) => {
     fetch(URL, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json',
         },
         body : JSON.stringify({
-            "task" : "otra tarea màs desde el browser..."
+            "task" : `${data}`
         })
     })
     .then(response => response.json())
     .then(data => console.log(data))
 }
 
+const updateData = (task, id) => {
+    fetch(URL + id, {
+        method: 'PUT',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify( { "task" : `${task}` } )
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
+const deleteData = (id) => {
+    fetch(URL + id, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type' : 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
 btn_add.addEventListener('click', (e) => {
-    sendData()
+    sendData(input_todo.value)
 })
+
+
+
+
