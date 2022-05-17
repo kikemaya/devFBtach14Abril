@@ -1,0 +1,49 @@
+PROYECTO DEL MÒDULO: POKEDEX.
+
+Realizar la construcciòn de una web app, que simule una pokedex(directorio de pokemon).
+
+Para realizarlo, necesitarà consumir la API de pokemon, del sitio https://pokeapi.co/
+
+Requerimientos:
+
+Interfaz gràfica de usuario
+consumir y presentar en el DOM, al menos los siguientes datos de la API:
+    - id
+    - imagen
+    - name
+    - abilities
+    - weight
+STACK: 
+    - git y github
+    - HTML y Javascript requeridos.
+    - Estilos libres: puede usar css puro, Sass, bootstrap, etc.
+
+En caso de no seleccionar la pokeapi, deberas entregar algo muy parecido, consumiendo al menos 5 datos de la api
+
+==================================================================================================================
+
+apps de productividad recomendadas:
+- trello (organizacion). Ejemplo de tablero:
+
+    Todo, in progress, in review, done
+
+- figma (diseño ui/ux)
+
+==================================================================================================================
+
+consejos para trabajar con git:
+- no tocar master, màs que para configurar el proyecto, crear las ramas y subir el proyecto completo
+- cada integrante trabaja en su propia rama y avisa a dev para hacer merge ò hace pull request desde su rama a dev y dev,
+aprueba y mezcla los cambios.
+
+configuracion recomendada de ramas:
+- master 
+- dev, Aquì se mezclan los cambios
+- ramaIntegrante1, ramaIntegrante2, ..., ramaIntegrante#N
+
+==================================================================================================================
+
+Tip: asigna roles y delega tareas.
+
+Divide y venceràs...
+Happy Hacking!.
