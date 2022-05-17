@@ -4,10 +4,17 @@
   "description": "repositorio del batch 14",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "suma": "node ./source/index.js",
     "multiplicacion": "node ./source/index.js",
-    "resta": "node ./source/index1.js"
+    "resta": "node ./source/index1.js",
+    "callback": "node ./source/Callback/C2.js/c2.js",
+    "callback1": "node ./source/Callback/C2.js/c2-repaso.js",
+    "nodemon": "nodemon ./source/Promesas/promesaAxios.js",
+    "nodemon2": "nodemon ./source/Promesas/pAxios2.js",
+    "express2": "nodemon ./source/express/index2.js",
+    "express3": "nodemon ./source/express/index3.js",
+    "up-json": "json-server ./source/crud-1/data.json",
+    "up-json1": "json-server ./source/R_promesas/data.json"
   },
   "repository": {
     "type": "git",
@@ -20,6 +27,11 @@
   },
   "homepage": "https://github.com/Pacocoder86/devFBtach14Abril#readme",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.16",
+    "xmlhttprequest": "^1.8.0"
   }
 }
