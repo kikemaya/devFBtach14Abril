@@ -6,7 +6,7 @@ Para realizarlo, necesitarà consumir la API de pokemon, del sitio https://pokea
 
 Requerimientos:
 
-Interfaz gràfica de usuario
+Interfaz gràfica de usuario responsive (responsive: media queries, flexbox, css grid)
 consumir y presentar en el DOM, al menos los siguientes datos de la API:
     - id
     - imagen
